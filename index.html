@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emoji Explorer ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Atmospheric blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-row">
+      <span class="logo-emoji">✨</span>
+      <h1>Emoji Explorer</h1>
+      <span class="logo-emoji" style="animation-delay:-3s">🔍</span>
+    </div>
+    <p class="tagline">Every emoji, instantly searchable</p>
+  </header>
+
+  <!-- Search -->
+  <div class="search-wrap">
+    <div class="search-inner">
+      <span class="search-icon">🔎</span>
+      <input id="search" type="text" placeholder="Search emojis… try 'smile', 'heart', 'fire'" autocomplete="off" spellcheck="false"/>
+      <button class="clear-btn" id="clearBtn" title="Clear search">✕</button>
+    </div>
+  </div>
+
+  <!-- Category pills -->
+  <div class="category-row" id="categoryRow"></div>
+
+  <!-- Stats -->
+  <div class="stats-bar" id="statsBar">Loading emojis…</div>
+
+  <!-- Grid -->
+  <div class="grid-wrapper">
+    <div id="emoji-grid"></div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast"></div>
+
+  <!-- Footer -->
+  <footer>Copyright © 2026 - All right reserved &nbsp;·&nbsp; <span id="totalCount">–</span> emojis loaded</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
